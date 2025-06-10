@@ -49,6 +49,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#gh-pages">GitHub Pages</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ejercicio">Ejercicio Practico</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -775,7 +778,80 @@ git push -u origin main</code></pre>
             </div>
           </div>
         </div>
-      </div>
+        <div class="card mb-4" id="gh-pages">
+          <div class="card-header bg-dark">
+            <i class="fas fa-globe section-icon"></i>Despliegue con GitHub Pages
+          </div>
+          <div class="card-body">
+            <p class="text-muted mb-3">
+              GitHub Pages es un servicio gratuito que transforma tu repositorio
+              en un sitio web estático. Es perfecto para publicar portafolios,
+              páginas de proyectos o cualquier sitio basado en HTML, CSS y
+              JavaScript.
+            </p>
+            <h5 class="mt-4">
+              <i class="fas fa-rocket section-icon text-primary"></i>Pasos para
+              desplegar tu sitio
+            </h5>
+            <ol>
+              <li>
+                <strong>Navega a la configuración:</strong> En la página de tu
+                repositorio en GitHub, haz clic en la pestaña
+                <strong>"Settings"</strong> (Configuración).
+              </li>
+              <li class="mt-2">
+                <strong>Selecciona la sección "Pages":</strong> En el menú lateral
+                izquierdo, busca y haz clic en <strong>"Pages"</strong>.
+              </li>
+              <li class="mt-2">
+                <strong>Configura la fuente de despliegue:</strong>
+                <ul>
+                  <li>
+                    En la sección "Build and deployment", bajo "Source", elige la
+                    opción <strong>"Deploy from a branch"</strong>.
+                  </li>
+                  <li>
+                    Asegúrate de que la rama (Branch) seleccionada sea
+                    <code>main</code> (o la rama principal de tu proyecto).
+                  </li>
+                  <li>
+                    Deja la carpeta como <code>/ (root)</code> y haz clic en
+                    <strong>"Save"</strong>.
+                  </li>
+                </ul>
+              </li>
+              <li class="mt-2">
+                <strong>¡Espera la magia!:</strong> GitHub comenzará a construir
+                tu sitio. Este proceso puede tardar un par de minutos. Una vez
+                listo, la página se actualizará y verás un mensaje de éxito con la
+                URL de tu sitio publicado.
+              </li>
+            </ol>
+            <div class="alert alert-info mt-4" role="alert">
+              <h4 class="alert-heading">¡Tu sitio está en vivo!</h4>
+              <p>
+                Una vez desplegado, tu proyecto será accesible desde una URL con
+                el siguiente formato:
+              </p>
+              <hr />
+              <pre
+                class="mb-0"
+              ><code>https://TU_USUARIO.github.io/NOMBRE_DE_TU_REPOSITORIO/</code></pre>
+            </div>
+            <div class="alert alert-tip mt-4" role="alert">
+              <strong>Consejo:</strong> Para que GitHub Pages funcione, tu
+              repositorio debe tener un archivo llamado <strong><code>index.html</code></strong> en la
+              raíz del proyecto. Este será el archivo que se muestre como página
+              principal.
+            </div>
+            <div class="alert alert-warning mt-2" role="alert">
+              <strong>¡Atención!</strong> Los cambios que subas a tu rama principal
+              (con <code>git push</code>) se reflejarán en el sitio web
+              automáticamente, pero pueden tardar unos minutos en actualizarse.
+            </div>
+          </div>
+        </div>
+
   <!-- Añado seccionde trabajo practico -->
 
       <div class="card mb-4" id="ejercicio">
